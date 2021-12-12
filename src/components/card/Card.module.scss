@@ -1,0 +1,12 @@
+@import '../../styles/common.scss';
+
+.card {
+    border: 1px solid $border-color;
+    h2 {
+        border-bottom: 1px solid $border-color;
+        background-color: $background-color;
+    }
+    > * {
+        padding: 7px;
+    }
+}
