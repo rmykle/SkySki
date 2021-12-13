@@ -13,6 +13,9 @@ interface ForecastResponse {
                     readonly details: {
                         readonly precipitation_amount: number;
                     };
+                    readonly summary: {
+                        readonly symbol_code: string;
+                    };
                 };
             };
         }[];

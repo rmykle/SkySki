@@ -1,3 +1,16 @@
+@import '../../styles/common.scss';
+@import '../../styles/breakpoints.scss';
+
 .navigation {
-    color: red;
+    background-color: $light;
+    padding: 10px;
+
+    h2 {
+        color: $primary-color;
+    }
+
+    @include Desktop {
+        max-width: $width-default;
+        align-self: center;
+    }
 }

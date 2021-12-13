@@ -4,6 +4,7 @@ interface ForecastEntry {
     readonly precipitation: number;
     readonly temperatur: number;
     readonly windSpeed: number;
+    readonly iconName: string;
 }
 
 export default ForecastEntry;

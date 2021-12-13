@@ -1,0 +1,27 @@
+@import '../../styles/common.scss';
+
+.locationFinder {
+    display: flex;
+    flex-direction: column;
+    ul {
+        align-self: center;
+        max-width: $width-default;
+        width: 100%;
+    }
+}
+
+.performSearchInstructions {
+    margin: 30px;
+    text-align: center;
+}
+
+.placecard {
+    margin: 10px 0;
+
+    .placecardContent {
+        display: flex;
+        > div:first-of-type {
+            flex: 1;
+        }
+    }
+}

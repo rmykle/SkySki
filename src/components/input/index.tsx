@@ -1,11 +1,19 @@
+/* eslint-disable no-unused-vars */
+import styles from './Input.module.scss';
+
 export interface InputProps {
     readonly value: string;
-    // eslint-disable-next-line no-unused-vars
-    readonly onChange: (asd: string) => void;
+    readonly onChange: (value: string) => void;
+    readonly placeholder?: string;
 }
 
-const Input = ({ value, onChange }: InputProps) => (
-    <input value={value} onChange={(e) => onChange(e.target.value)} />
+const Input = ({ value, onChange, placeholder = '' }: InputProps) => (
+    <input
+        placeholder={placeholder}
+        className={styles.input}
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
+    />
 );
 
 export default Input;

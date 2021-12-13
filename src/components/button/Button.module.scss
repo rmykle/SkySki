@@ -1,0 +1,13 @@
+@import '../../styles//common.scss';
+
+.button {
+    background-color: $primary-color;
+    color: $light;
+    border: none;
+    padding: 10px;
+
+    &:disabled {
+        background-color: $background-color;
+        color: $primary-color;
+    }
+}

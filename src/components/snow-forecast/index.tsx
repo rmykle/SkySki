@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react';
 import EntryDays from '../../models/EntryDays';
-import useGetSearchParams from '../location-finder/util/useGetSearchParams';
+import useGetSearchParams from '../place-finder/util/useGetSearchParams';
 import getWeatherForecasts from './http/getWeatherForecasts';
 import ForecastDetails from './sub-components/ForecastDetails';
+import styles from './SnowForecast.module.scss';
 
 const SnowForecast = () => {
     const [forecastResult, setForecastResult] = useState<EntryDays>({});
@@ -17,7 +18,7 @@ const SnowForecast = () => {
     }
 
     return (
-        <ul>
+        <ul className={styles.entryList}>
             {Object.keys(forecastResult).map((entry) => {
                 const day = forecastResult[entry];
                 return (

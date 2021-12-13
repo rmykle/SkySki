@@ -1,9 +1,21 @@
+@import '../../../../styles//common.scss';
+
 .details {
     display: flex;
-    > * {
-        flex: 1;
-    }
+
     margin: 10px 0;
+    > div {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &:not(:last-of-type) {
+            border-right: 1px solid $primary-color;
+        }
+        img {
+            width: 80%;
+        }
+    }
 }
 
 .card {

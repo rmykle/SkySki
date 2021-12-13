@@ -1,0 +1,9 @@
+@import './styles/breakpoints.scss';
+@import './styles/common.scss';
+
+.app {
+    width: 100%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
